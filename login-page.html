@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer" 
+  />
+
+  <title>Login</title>
+  <link rel="stylesheet" href="login-page.css">
+  <script defer src="login-page.js"></script>
+</head>
+
+<body>
+  <main id="main-holder">
+    <h1 id="login-header">Sign In</h1>
+    <a href="https://www.startingpointworld.com/">
+    <img src="6e56dc_5e21013f6cb94383b021d2a27083c207_mv2.webp" style="width: auto; height: 138px; position: absolute; left: 350px; top: 13px;">
+    </a>
+    
+    
+    <!-- <img src="SignBanner.png" style ="width: auto; height: 200px; position: absolute; top: 200px;"> -->
+
+
+    
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password!</span></p>
+    </div>
+    
+    <form id="login-form">
+      <div class="input-field">
+        <i class="fas fa-user"></i>
+        <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      </div>
+      <div class="input-field">
+        <i class="fas fa-lock"></i>
+        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      </div>
+      <!-- <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username"> -->
+      <!-- <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password"> -->
+      <input type="submit" value="Login" id="login-form-submit">
+      <p class="social-text">Or Sign in with Google</p>
+      <div class="social-media">
+        <a href="https://accounts.google.com/signin/v2/identifier?sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="social-icon">
+          <i class="fab fa-google"></i>
+        </a>
+      </div>
+    </form>
+  
+  </main>
+</body>
+
+</html>
