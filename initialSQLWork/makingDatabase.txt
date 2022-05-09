@@ -51,18 +51,13 @@ CREATE TABLE location (
 	ZipCode INT(5) NOT NULL,
 	PRIMARY KEY (ID),
 	FOREIGN KEY (ID) REFERENCES parent(ID),
-	FOREIGN KEY (ZipCode) REFERENCES city(ZipCode)
 );
 
-# Ended up adding ZipCode FOREIGN KEY later via
-	# "ALTER TABLE location
-	#	ADD FOREIGN KEY (ZipCode) REFERENCES city(ZipCode);"
 
 CREATE TABLE city (
 	ZipCode INT(5) NOT NULL,
 	City VARCHAR(50) NOT NULL,
 	PRIMARY KEY (ZipCode)
+	FOREIGN KEY (ZipCode) REFERENCES location(ZipCode)
 );
-
-
 

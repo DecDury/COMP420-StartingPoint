@@ -1,3 +1,5 @@
+ALTER TABLE children ALTER ChildFirstName SET DEFAULT 'NoNameProvided';
+
 INSERT INTO children (ChildFirstName,ID,Gender,Age,ShoeSize) VALUES ('Latif',154,'f',8,3);
 INSERT INTO children (ChildFirstName,ID,Gender,Age,ShoeSize) VALUES ('Elham',154,'m',7,2);
 INSERT INTO children (ChildFirstName,ID,Gender,Age,ShoeSize) VALUES ('Asma',154,'f',3,9);
@@ -5,7 +7,7 @@ INSERT INTO children (ChildFirstName,ID,Gender,Age,ShoeSize) VALUES ('Mohammad',
 INSERT INTO children (ID,Gender,Age,ShoeSize) VALUES (155,'f',18,9);
 INSERT INTO children (ID,Gender,Age,ShoeSize) VALUES (155,'m',6,13);
 INSERT INTO children (ID,Gender,Age) VALUES (156,'f',6);
-INSERT INTO children (ChildFirstName',ID,Gender,Age) VALUES ('Frozan',157,'f',19);
+INSERT INTO children (ChildFirstName,ID,Gender,Age) VALUES ('Frozan',157,'f',19);
 INSERT INTO children (ChildFirstName,ID,Gender,Age) VALUES ('Asma',157,'f',17);
 INSERT INTO children (ChildFirstName,ID,Gender,Age) VALUES ('Husna',157,'f',14);
 INSERT INTO children (ChildFirstName,ID,Gender,Age) VALUES ('Hadia',157,'f',11);
@@ -21,3 +23,5 @@ INSERT INTO children (ChildFirstName,ID,Gender,Age,ShoeSize) VALUES ('Hadia',159
 INSERT INTO children (ChildFirstName,ID,Gender,Age,ShoeSize) VALUES ('Zahra',159,'f',13,35);
 INSERT INTO children (ChildFirstName,ID,Gender,Age,ShoeSize) VALUES ('Fereshta',159,'f',12,35);
 INSERT INTO children (ChildFirstName,ID,Gender,Age,ShoeSize) VALUES ('Rafi',159,'m',11,37);
+
+
